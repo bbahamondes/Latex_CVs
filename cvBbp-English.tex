@@ -1,74 +1,43 @@
-   %% start of file `template.tex'.
+%% start of file `cvBbp-English.tex'.
 %% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
-
 \documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % modern themes
 \moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
 \usepackage[scale=0.8,top=2cm]{geometry}
-
-%\usepackage[scale=0.75]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
-
+%\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+%\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+%\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \usepackage{import}
 \renewcommand*{\namefont}{\fontsize{22}{26}\mdseries\upshape}
 % personal data
 \name{\textbf{Bruno Alejandro}}{\textbf{Bahamondes Pérez}}
-%\address{Mistral 3634,Estación Central,Región Metropolitana,Chile}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-%\phone[mobile]{+569 91999324}                   % optional, remove / comment the line if not wanted
-%\email{bahamondesbp@gmail.com}                               % optional, remove / comment the line if not wanted
-%\extrainfo{19208517-9}                 % optional, remove / comment the line if not wanted
-%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
-
-% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
-%\makeatletter
-%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-%\makeatother
-%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
 \begin{document}
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
-\vspace*{-10mm}
+\vspace*{-15mm}
 
 \section{Personal Information}
 
 \begin{itemize}
-
 \item{\textbf{Address}: Mistral 3634, Estación Central, Región Metropolitana, Chile.}
-
 \item{\textbf{Phone Number}: +56 9 9199 9324}
-
 \item{\textbf{Email}: bahamondesbp@gmail.com}
-
 \item{\textbf{Rut}: 19.208.517-9}
-
 \item{\textbf{Date of birth}: 22/01/1996}
-
-\item{\textbf{Gender}: Male}\\
-
+\item{\textbf{Gender}: Male}
 \end{itemize}
 
 \section{Objective}
@@ -78,14 +47,12 @@
 \small{ I am a hard working, applied individual interested in learning new technologies. Fast and enthusiastic learner, used to work under pressure. Mostly self taught on Linux and Python.}
 
 \section{Work History}
-
-\vspace{3pt}
-
 \begin{itemize}
-
 \item{\cventry{2017--2018}{Software Developer}{Bprog LTDA}{Chile}{}{Had to meet with clients, talk with them and offer a solution that best solves their problem. Had to work under pressure to meet deadlines.}}
-\item{\cventry{2018--Present}{Associate Technical Support Engineer}{Hortonworks}{Chile}{}{}}
-
+\vspace{3pt}
+\item{\cventry{2018--2019}{Associate Technical Support Engineer}{Hortonworks}{Chile}{}{}}
+\vspace{3pt}
+\item{\cventry{2019--Present}{Customer Operations Engineer}{Cloudera}{Chile}{}{}}
 \end{itemize}
 
 \section{Qualifications}
@@ -93,57 +60,32 @@
 \vspace{3pt}
 
 \begin{itemize}
-
-\item{\cventry{2015--2017}{Analista Programador Computacional }{Instituto Profesional DuocUC}{Chile}{}{}}
-
 \item{\cventry{2014--2015(Incomplete)}{Bachillerato en Humanidades }{Universidad Alberto Hurtado}{Chile}{}{}}
-
+\item{\cventry{2015--2017}{Analista Programador Computacional }{Instituto Profesional DuocUC}{Chile}{}{}}
+\item{\cventry{2019--Present}{Ingenieria Informatica}{Instituto Profesional DuocUC}{Chile}{}{}}
 \end{itemize}
 
 \section{Skills}
-
-\vspace{3pt}
-
 \begin{itemize}
-
 \item \textbf{Programming Languages} \\Advanced knowledge on: C\#, Python. \\Notions on: Java.
-
 \vspace{3pt}
-
+\item \textbf{Hadoop Ecosystem}\\HDFS, MapReduce, YARN, Apache NiFi, Hive, Kafka, Zookeeper, Spark, Zeppelin, Kerberos.
+\vspace{3pt}
 \item \textbf{Database Languages} \\SQL, PL/SQL, Transact-SQL.
-
 \vspace{3pt}
-
-\item \textbf{Web Development Languages} \\Advanced knowledge on: PHP, Django, Jquery, JavaScript.
-
+\item \textbf{Web Development Languages} \\Advanced knowledge on: PHP, Django, Jquery, JavaScript, \LaTeX.
 \vspace{3pt}
-
-\item \textbf{Strengths} \\Detail Oriented. Problem Solving. Analítico. Task-Oriented. Pressure tolerance.
-
+\item \textbf{Strengths} \\Detail Oriented. Problem Solving. Analytical. Task-Oriented. Pressure tolerance. Troubleshooting. Customer Service
 \vspace{3pt}
-
-\item \textbf{Languages} \\Advanced English.
-
+\item \textbf{Languages} \\Fluent English.
 \end{itemize}
-
-
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
 %  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
 \nocite{*}
-
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
-
 %-----       letter       ---------------------------------------------------------
 
 \end{document}
 
 
-%% end of file `template.tex'.
+%% end of file `cvBbp-English.tex'.
