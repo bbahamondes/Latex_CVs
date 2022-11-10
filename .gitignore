@@ -38,3 +38,7 @@ Thumbs.db
 
 *.aux
 *.out
+
+*.fdb_latexmk
+*.fls
+
